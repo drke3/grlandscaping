@@ -1,0 +1,143 @@
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-402">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Portfolio</span>
+            <h2 class="cs-title">Some Work from Our Memorable Gallery</h2>
+            <p class="cs-text">
+                At Stitch Cleaning Service, let us help you solve problems so that you can focus on your mission. We support businesses through periods of expansion, succession.
+            </p>
+        </div>
+        <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/gallery/o.jpg">
+                <source media="(min-width: 601px)" srcset="/gallery/o.jpg">
+                <img loading="lazy" decoding="async" src="/gallery/o.jpg" alt="gallery" width="630" height="400">
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/gallery/o-1.jpg">
+                <source media="(min-width: 601px)" srcset="/gallery/o-1.jpg">
+                <img loading="lazy" decoding="async" src="/gallery/o-1.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/gallery/o-2.jpg">
+                <source media="(min-width: 60px)" srcset="/gallery/o-2.jpg">
+                <img loading="lazy" decoding="async" src="/gallery/o-2.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/gallery/o-3.jpg">
+                <source media="(min-width: 601px)" srcset="/gallery/o-3.jpg">
+                <img loading="lazy" decoding="async" src="/gallery/o-3.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/gallery/o-4.jpg">
+                <source media="(min-width: 601px)" srcset="/gallery/o-4.jpg">
+                <img loading="lazy" decoding="async" src="/gallery/o-4.jpg" alt="gallery" width="305" height="400">
+            </picture>
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="/gallery/o-5.jpg">
+                <source media="(min-width: 601px)" srcset="/gallery/o-5.jpg">
+                <img loading="lazy" decoding="async" src="/gallery/o-5.jpg" alt="gallery" width="305" height="400">
+            </picture>
+        </div>
+    </div>
+</section>
+                                
+
+<style>
+    /*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #gallery-402 {
+        padding: var(--sectionPadding);
+    }
+    #gallery-402 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #gallery-402 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #gallery-402 .cs-gallery {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* 16px - 20px */
+        gap: clamp(1rem, 1.5vw, 1.25rem);
+    }
+    #gallery-402 .cs-image {
+        border-radius: 1.25rem;
+        width: 47%;
+        aspect-ratio: 1;
+        /* clips the image corners */
+        overflow: hidden;
+        display: block;
+        position: relative;
+    }
+    #gallery-402 .cs-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes it act like a background image */
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #gallery-402 .cs-container {
+        max-width: 80rem;
+    }
+    #gallery-402 .cs-image {
+        width: 31.8%;
+        max-width: 18.75rem;
+        aspect-ratio: 1;
+    }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #gallery-402 .cs-gallery {
+        align-items: stretch;
+        justify-content: center;
+    }
+    #gallery-402 .cs-image {
+        width: 39.375rem;
+        max-width: 100%;
+        height: 25rem;
+    }
+    #gallery-402 .cs-image:nth-of-type(2),
+    #gallery-402 .cs-image:nth-of-type(3),
+    #gallery-402 .cs-image:nth-of-type(4),
+    #gallery-402 .cs-image:nth-of-type(5) {
+        width: 19.0625rem;
+    }
+}
+                                
+</style>

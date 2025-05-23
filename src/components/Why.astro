@@ -1,0 +1,281 @@
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-1840">
+    <div class="cs-container">
+        <div class="cs-video-wrapper">
+            <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/misc/1why.png">
+                    <source media="(min-width: 601px)" srcset="/misc/1why.png">
+                    <img loading="lazy" decoding="async" src="/misc/1why.png" alt="body builder" width="630" height="877">
+                </picture>
+
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Why Choose Us</span>
+            <h2 class="cs-title">We Bring Life to Your Landscape</h2>
+            <p class="cs-text">
+              We know your outdoor needs evolve — that’s why we make landscaping effortless and tailored to your lifestyle. Whether you're dreaming of a peaceful retreat or a vibrant space to entertain, we design with purpose and build with passion. Let us turn your yard into a natural extension of your home.            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                    Customized Landscape Designs                </li>
+                <li class="cs-li">
+                    <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                    Sustainable, Low-Maintenance Solutions
+                </li>
+                <li class="cs-li">
+                    <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                    Expert Installation & Ongoing Care
+                </li>
+                <li class="cs-li">
+                    <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                    Trusted Local Team with Years of Experience
+                </li>
+            </ul>
+            <a class="cs-button-solid" href="/contact">Contact Us</a>
+        </div>
+    </div>
+</section>
+                                
+
+<style>
+    /*-- -------------------------- -->
+<!--       Why Choose Us        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose-1840 {
+    padding: var(--sectionPadding);
+    /* 128px - 192px */
+    padding-bottom: clamp(8rem, 14vw, 12rem);
+    overflow-x: clip;
+    position: relative;
+  }
+  #why-choose-1840 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #why-choose-1840 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #why-choose-1840 .cs-text {
+    /* 12px - 24px */
+    margin-bottom: clamp(0.75rem, 4vw, 1.5rem);
+  }
+  #why-choose-1840 .cs-ul {
+    max-width: 39.375rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: row;
+    /* 4px - 12px */
+    gap: clamp(0.25rem, 2vw, 0.75rem);
+  }
+  #why-choose-1840 .cs-li {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    list-style: none;
+    width: 100%;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #why-choose-1840 .cs-check-icon {
+    width: 1.5rem;
+    height: auto;
+    /* adds extra space between the icon and top of parent so it's more centered */
+    margin-top: 1px;
+    display: block;
+  }
+  #why-choose-1840 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 2rem 0 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #why-choose-1840 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #why-choose-1840 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #why-choose-1840 .cs-video-wrapper {
+    width: 100%;
+    height: 111vw;
+    max-height: 22.5rem;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #why-choose-1840 .cs-video-wrapper:hover {
+    cursor: pointer;
+  }
+  #why-choose-1840 .cs-video-wrapper:hover .cs-play {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  #why-choose-1840 .cs-video-wrapper video,
+  #why-choose-1840 .cs-video-wrapper .cs-picture {
+    width: 100%;
+    height: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #why-choose-1840 .cs-video-wrapper video img,
+  #why-choose-1840 .cs-video-wrapper .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #why-choose-1840 .cs-play {
+    /* 80px - 120px */
+    width: clamp(5rem, 10vw, 7.5rem);
+    height: clamp(5rem, 10vw, 7.5rem);
+    display: flex;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  #why-choose-1840 .cs-play.cs-hide {
+    transform: translate(-50%, -50%) scale(0) !important;
+    opacity: 0;
+  }
+  #why-choose-1840 .cs-icon {
+    width: 1.25rem;
+    height: auto;
+  }
+  #why-choose-1840 .cs-picture {
+    width: 100%;
+    height: 95vw;
+    /* 260px - 324px */
+    min-height: clamp(16.25rem, 32vw, 20.25rem);
+    margin: clamp(3rem, 6vw, 4rem) 0 0;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #why-choose-1840 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #why-choose-1840 .cs-graphic {
+    width: 100%;
+    min-width: 75rem;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  #why-choose-1840 .cs-dark {
+    display: none;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #why-choose-1840 .cs-video-wrapper {
+    height: 90%;
+    max-height: 100%;
+    /* 420px - 740px */
+    min-height: clamp(26.25rem, 50vw, 46.25rem);
+  }
+  #why-choose-1840 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #why-choose-1840 .cs-content {
+    width: 52%;
+    max-width: 34.375rem;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #why-choose-1840 .cs-ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #why-choose-1840 .cs-picture {
+    height: 100%;
+    max-height: 100%;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #why-choose-1840 {
+    padding-bottom: 10vw;
+  }
+  #why-choose-1840 .cs-container {
+    align-items: stretch;
+  }
+  #why-choose-1840 .cs-video-wrapper {
+    height: auto;
+    margin-bottom: 8.75rem;
+  }
+}
+                                
+</style>
+
