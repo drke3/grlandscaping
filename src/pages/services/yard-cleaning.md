@@ -2,6 +2,7 @@
 layout: ../../layouts/ServicesLayout.astro
 title: Yard Cleaning
 fileName: "/assets/yard-cleaning.jpg"
+summary: Clear out clutter, debris, and overgrowth with our comprehensive yard cleaning services. Perfect for seasonal tune-ups or property cleanups.
 ---
 
 # Fast, Thorough Yard Cleaning to Refresh Your Outdoor Space

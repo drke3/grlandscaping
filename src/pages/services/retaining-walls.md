@@ -2,6 +2,7 @@
 layout: ../../layouts/ServicesLayout.astro
 title: Retaining Walls
 fileName: "/assets/retaining-walls.jpg"
+summary: Add structure, style, and stability to your outdoor spaces with professionally built retaining walls.
 ---
 
 # Functional & Attractive Retaining Walls for Any Landscape

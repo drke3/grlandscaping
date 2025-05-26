@@ -2,6 +2,7 @@
 layout: ../../layouts/ServicesLayout.astro
 title: Concrete Services
 fileName: "/assets/concrete.jpg"
+summary: From driveways to decorative patios, our concrete services provide long-lasting surfaces that improve both form and function of your outdoor space.
 ---
 
 # Durable & Stylish Concrete for Driveways, Patios, and Walkways

@@ -2,6 +2,7 @@
 layout: ../../layouts/ServicesLayout.astro
 title: Tree Services
 fileName: "/assets/tree-services.jpg"
+summary: Keep your landscape safe, healthy, and beautiful with expert tree services tailored to your property.
 ---
 
 # Professional Tree Trimming, Removal & Health Care

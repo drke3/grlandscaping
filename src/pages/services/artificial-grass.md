@@ -2,6 +2,7 @@
 layout: ../../layouts/ServicesLayout.astro
 title: Artificial Grass Installation
 fileName: "/assets/artificial-grass.jpg"
+summary: Say goodbye to mowing, watering, and patchy grass. Our premium artificial turf solutions provide a consistently green, clean, and low-maintenance lawn that looks and feels like natural grass.
 ---
 
 # Low-Maintenance Artificial Grass for a Lush, Green Lawn Year-Round

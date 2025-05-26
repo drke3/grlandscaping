@@ -2,6 +2,7 @@
 layout: ../../layouts/ServicesLayout.astro
 title: Brush Clearance
 fileName: "/assets/brush-clearance.jpg"
+summary: Reduce wildfire risk and meet local regulations with our professional brush clearance services.
 ---
 
 # Fire-Safe Brush Clearance to Protect Your Property

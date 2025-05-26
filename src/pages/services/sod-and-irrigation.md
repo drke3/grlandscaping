@@ -2,6 +2,7 @@
 layout: ../../layouts/ServicesLayout.astro
 title: Sod & Irrigation Installation
 fileName: "/assets/sod-and-irrigation.jpg"
+summary: Get an instant lawn transformation with professionally installed sod and efficient irrigation systems. We ensure your new grass thrives with proper watering from day one.
 ---
 
 # Fast, Fresh Sod and Smart Irrigation for a Healthy, Green Lawn

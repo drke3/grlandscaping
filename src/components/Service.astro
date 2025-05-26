@@ -1,249 +1,219 @@
-<!-- ============================================ -->
-<!--                  Services                    -->
-<!-- ============================================ -->
+---
+let services = Object.values(import.meta.glob("../pages/services/*.md", {
+    eager: true}));
+---
 
-<section id="services-222">
+<section id="services-1168">
     <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex-group">
-                <span class="cs-topper">Our Services</span>
-                <h2 class="cs-title">Professional Landscaping, Friendly Service</h2>
-            </div>
-            <p class="cs-text">
-                We offer expert landscaping services with a personal touch, ensuring your outdoor space looks great and feels welcoming.            </p>
-        </div>
-        <ul class="cs-card-group">
+      <div class="cs-content">
+        <span class="cs-topper">Our services</span>
+        <h2 class="cs-title">outdoor services to transform your space</h2>
+        <p class="cs-text">
+            We offer a full range of landscaping and property maintenance solutions designed to enhance the beauty, safety, and functionality of your outdoor space. Whether you're looking for a fresh lawn, safer surroundings, or a complete yard makeover — we've got you covered with expert craftsmanship and reliable service.        </p>
+      </div>
+      <ul class="cs-card-group">
+        {services.map(service => (
             <li class="cs-item">
-                <a href="services/artificial-grass" class="cs-link">
-                    <h3 class="cs-h3">Artificial Grass</h3>
-                    <p class="cs-item-text">
-                        Enjoy a lush, green lawn year-round with low-maintenance artificial turf installation.
-                    </p>
+              <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source
+                      media="(max-width: 600px)"
+                      srcset={service.frontmatter.fileName}>
+                <!--Tablet and above Image-->
+                <source
+                      media="(min-width: 601px)"
+                      srcset={service.frontmatter.fileName}>
+                <img
+                      loading="lazy"
+                      decoding="async"
+                      src={service.frontmatter.fileName}
+                      alt="mechanic"
+                      width="413"
+                      height="240"
+                      aria-hidden="true">
+              </picture>
+              <div class="cs-info">
+                <h3 class="cs-h3">{service.frontmatter.title}</h3>
+                <p class="cs-item-text">
+                    {service.frontmatter.summary}
+                </p>
+                <a href={service.url} class="cs-link">
+                  Read More
+                  <img
+                        class="cs-arrow"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+                        alt="icon"
+                        width="20"
+                        height="20"
+                        aria-hidden="true">
                 </a>
+              </div>
             </li>
-            <li class="cs-item">
-                <a href="services/sod-and-irrigation" class="cs-link">
-                    <h3 class="cs-h3">Sod and Irrigation</h3>
-                    <p class="cs-item-text">
-                        Get instant curb appeal with fresh sod and efficient irrigation systems tailored to your yard.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="services/concrete" class="cs-link">
-                    <h3 class="cs-h3">Concrete</h3>
-                    <p class="cs-item-text">
-                        Durable and clean concrete solutions for driveways, patios, and walkways.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="services/tree-services" class="cs-link">
-                    <h3 class="cs-h3">Tree Services</h3>
-                    <p class="cs-item-text">
-                        Safe and professional tree trimming, removal, and care to keep your landscape healthy.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="services/retaining-walls" class="cs-link">
-                    <h3 class="cs-h3">Retaining Walls</h3>
-                    <p class="cs-item-text">
-                        Functional and stylish retaining walls built to prevent erosion and enhance yard structure.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="services/low-voltage-lighting" class="cs-link">
-                    <h3 class="cs-h3">Low Voltage Lighting</h3>
-                    <p class="cs-item-text">
-                        Illuminate your outdoor spaces with energy-efficient, low voltage landscape lighting.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="services/yard-cleaning" class="cs-link">
-                    <h3 class="cs-h3">Yard Cleaning</h3>
-                    <p class="cs-item-text">
-                        Fast, thorough yard cleanups to restore order and beauty to your outdoor areas.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="services/brush-clearance" class="cs-link">
-                    <h3 class="cs-h3">Brush Clearance</h3>
-                    <p class="cs-item-text">
-                        Clear overgrown brush and reduce fire risk with our expert removal services.
-                    </p>
-                </a>
-            </li>
-        </ul>
-        
+        ))}
+      </ul>
     </div>
 </section>
                                 
-
 <style>
     /*-- -------------------------- -->
-<---         Services           -->
+<---          Services          -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-222 {
+    #services-1168 {
+        background-color: #fff;
         padding: var(--sectionPadding);
     }
-    #services-222 .cs-container {
-        width: 100%;
-        /* changes to 1280px on tablet */
-        max-width: 34.375rem;
-        margin: auto;
+    #services-1168 .cs-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
+        /* changes to 1440px at large desktop */
+        max-width: calc(824 / 16 * 1rem);
+        width: 100%;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
     }
-    #services-222 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
+    #services-1168 .cs-content {
         display: flex;
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
         align-items: center;
+        width: 100%;
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
     }
 
-    #services-222 .cs-card-group {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 1rem;
+    #services-1168 .cs-title {
+        max-width: 20ch;
     }
-    #services-222 .cs-item {
+    #services-1168 .cs-card-group {
+        display: grid;
+        align-items: stretch;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        /* 16px - 20px */
+        gap: clamp(1rem, 2vw, 1.25rem);
+    }
+    #services-1168 .cs-item {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #f7f7f7;
+        width: 100%;
         list-style: none;
         text-align: left;
+        grid-column: span 12;
+    }
+    #services-1168 .cs-item:hover .cs-picture img {
+        transform: scale(1.2);
+    }
+    #services-1168 .cs-item:hover .cs-h3,
+    #services-1168 .cs-item:hover .cs-link {
+        color: var(--primary);
+    }
+    #services-1168 .cs-item:hover .cs-arrow {
+        filter: initial;
+    }
+    #services-1168 .cs-picture {
+        position: relative;
+        display: block;
+        /* 180px - 240px */
+        height: clamp(11.25rem, 24vw, 15rem);
         width: 100%;
-        /* 32px - 44px top & bottom,  20px - 32px left & right */
-        padding: clamp(2rem, 4vw, 2.75rem) clamp(1.25rem, 2.5vw, 2rem);
-        /* prevents padding from adding to height and width */
-        border-radius: 0.3125rem;
-        box-sizing: border-box;
-        transition: box-shadow 0.3s;
-        display: block;
+        /* clips the image from overflowing parent on hover */
+        overflow: hidden;
     }
-    #services-222 .cs-item:hover {
-        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-    }
-    #services-222 .cs-picture {
-        width: 6.9375rem;
-        height: 6.9375rem;
-        background-color: #fafbfc;
-        border-radius: 0.625rem;
-        margin-bottom: 2.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    #services-222 .cs-picture img {
-        width: 4.0625rem;
-        height: auto;
-        display: block;
-    }
-    #services-222 .cs-h3 {
-        font-size: 1.25rem;
-        line-height: 1.2em;
-        margin: 0;
-        margin-bottom: 1rem;
-        color: var(--headerColor);
-    }
-    #services-222 .cs-item-text {
-        font-size: 1rem;
-        line-height: 1.5em;
-        margin: 0;
-        color: var(--bodyTextColor);
-    }
-    #services-222 .cs-button-solid {
-        font-size: 1rem;
-        /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-        text-decoration: none;
-        font-weight: 700;
-        text-align: center;
-        margin: 0;
-        color: #fff;
-        min-width: 9.375rem;
-        padding: 0 1.5rem;
-        background-color: var(--primary);
-        border-radius: 0.25rem;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
-    }
-    #services-222 .cs-button-solid:before {
-        content: "";
+    #services-1168 .cs-picture img {
+        z-index: -1;
         position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
         top: 0;
         left: 0;
-        z-index: -1;
-        border-radius: 0.25rem;
-        transition: width 0.3s;
-    }
-    #services-222 .cs-button-solid:hover:before {
+        height: 100%;
         width: 100%;
+        object-fit: cover;
+        transition: transform 0.65s;
+    }
+    #services-1168 .cs-info {
+        display: flex;
+        flex-direction: column;
+        padding: calc(24 / 16 * 1rem);
+    }
+    #services-1168 .cs-h3 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        color: var(--headerColor);
+        transition: background-color 0.3s;
+        text-align: inherit;
+        margin: 0 0 calc(12 / 16 * 1rem) 0;
+        transition: color 0.3s;
+    }
+    #services-1168 .cs-item-text {
+        width: 100%;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        text-align: inherit;
+        margin: 0;
+    }
+    #services-1168 .cs-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        font-size: calc(16 / 16 * 1rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        color: var(--headerColor);
+        text-align: inherit;
+        margin-top: calc(20 / 16 * 1rem);
+        transition: color 0.3s;
+    }
+    #services-1168 .cs-link:hover .cs-arrow {
+        transform: translateX(0.25rem);
+    }
+    #services-1168 .cs-arrow {
+        filter: grayscale(1) brightness(0);
+        display: block;
+        height: auto;
+        width: calc(20 / 16 * 1rem);
+        transition:
+            filter 0.3s,
+            transform 0.3s;
     }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #services-222 .cs-container {
-        max-width: 80rem;
-    }
-    #services-222 .cs-card-group {
-        justify-content: space-between;
-        align-items: stretch;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    #services-222 .cs-content {
-        text-align: left;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #services-222 .cs-flex-group {
-        width: 45%;
-    }
-    #services-222 .cs-title {
-        margin: 0;
-    }
-    #services-222 .cs-text {
-        width: 45%;
-        margin: 0;
-    }
-    #services-222 .cs-item {
-        width: 45%;
+    #services-1168 .cs-item {
+        grid-column: span 6;
     }
 }
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #services-222 .cs-item {
-        width: 23%;
-        max-width: 19rem;
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #services-1168 .cs-container {
+        max-width: calc(1440 / 16 * 1rem);
+    }
+    #services-1168 .cs-item {
+        grid-column: span 3;
     }
 }
 
-a {
-    text-decoration: none;
-}
                                 
 </style>

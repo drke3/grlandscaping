@@ -2,6 +2,7 @@
 layout: ../../layouts/ServicesLayout.astro
 title: Low Voltage Lighting
 fileName: "/assets/low-voltage-lighting.jpg"
+summary: Extend the beauty and functionality of your yard into the night with custom low voltage lighting.
 ---
 
 # Highlight Your Landscape with Energy-Efficient Lighting
